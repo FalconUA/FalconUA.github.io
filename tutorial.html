@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tutorial Title</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/base-styling.css" rel="stylesheet">
+    <link href="assets/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand" href="#">CodeTutorials</a>
+        </div>
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+        <div class="col-sm-7 col-md-7 col-lg-7">            
+            <form class="navbar-form" role="search">
+            <div class="input-group col-sm-12 col-md-12 col-lg-12">
+                
+                   <input type="text" class="form-control" placeholder="Search" name="q">
+                <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+                
+            </div>
+            </form>
+
+        </div>        
+
+        
+        <ul class="nav navbar-nav navbar-right">            
+            <li><a href="#">New tutorial</a></li>
+            <li><a href="#">Review</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">FalconUA <b class="caret"></b></a>
+            <ul class="dropdown-menu">                
+                <li><a href="#">Your profile</a></li>
+                <li><a href="#">Your stats</a></li>
+                <li><a href="#">Help</a></li>                
+                <li class="divider"></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Sign out</a></li>
+            </ul>
+            </li>
+        </ul>
+        
+        </div><!-- /.navbar-collapse -->
+    </div><!-- container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-9">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1>Tutorial Title</h1>
+
+               
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> <a href="#">Last edit</a> on August 24, 2013 at 9:00 PM by <a href="#">FalconUA</a></p>
+
+                <hr>
+               
+
+                <!-- Post Content -->
+               
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>               
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+<pre class="prettyprint">
+double pool::disjoint(const genome& g1, const genome& g2){
+    auto it1 = g1.genes.begin();
+    auto it2 = g2.genes.begin();
+ 
+    unsigned int disjoint_count = 0;
+    for (; it1 != g1.genes.end(); it1++)
+        if (g2.genes.find((*it1).second.innovation_num) == g2.genes.end())
+            disjoint_count++;
+
+    for (; it2 != g2.genes.end(); it2++)
+        if (g1.genes.find((*it2).second.innovation_num) == g1.genes.end())
+            disjoint_count++;
+
+    return (1. * disjoint_count) / (1. * std::max(g1.genes.size(), g2.genes.size()));
+}
+</pre>                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+
+
+               
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-3">
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Article statistics</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+                </div>
+
+                
+                <!-- Blog Categories Well -->                
+
+                <div class="well">
+                    <h4>Article top contributors</h4>                    
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contributor Name</a></li>
+                                <li><a href="#">Contributor Name</a></li>
+                                <li><a href="#">Contributor Name</a></li>
+                                <li><a href="#">Contributor Name</a></li>
+                                <li><a href="#">Contributor Name</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5">
+                            <ul class="list-unstyled">
+                                <li>2300 lines</li>
+                                <li>1000 lines</li>
+                                <li>5 lines</li>
+                                <li>2 lines</li>
+                                <li>2 lines</li>
+                            </ul>
+                        </div>                        
+                    </div>
+
+                    <div class="text-center">
+                        <h5><a href="#">All contributors of this article</a></h5>
+                    </div>
+                    <!-- /.row -->
+                </div>               
+
+                <!-- Side Widget Well -->
+                <div class="well">
+                    <h4>Advetisement</h4>
+                    <p>No advertisements yet</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+
+		<hr>
+        <!-- Footer -->
+
+        <footer>
+            <div class="row">            
+                <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 pull-left">
+                        <p class="text-center"><a href="#">Terms</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 pull-left">
+                        <p class="text-center"><a href="#">Contact</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 pull-left">
+                        <p class="text-center"><a href="#">Feedback</a></p>
+                    </div>
+
+                </div>
+                </div>
+                
+                <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <p class="text-center">Copyright &copy; FalconUA 2015</p>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 pull-right">
+                        <p class="text-center"><a href="#">About</a></p>
+                    </div>                
+                    <div class="col-lg-2 col-md-3 pull-right">
+                        <p class="text-center"><a href="#">Help</a></p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 pull-right">
+                        <p class="text-center"><a href="#">Blog</a></p>
+                    </div>
+                </div>
+                </div>
+                
+            </div>                
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="assets/bootstrap/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Google code highlighter -->
+    <script src="assets/google-code-prettify/prettify.js"></script>
+    <script src="assets/google-code-prettify/application.js"></script>
+
+</body>
+
+</html>
