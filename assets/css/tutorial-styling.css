@@ -1,0 +1,22 @@
+.article-statistics {
+	font-size: 18px;
+	font-weight: 300;
+	color: #292f33;
+}
+
+.article-statistics .label-uppercase {
+/*	text-transform: uppercase;*/
+	font-size: 13px;
+	font-weight: 500;	
+	color: #777;
+	vertical-align: middle;
+}
+
+.article-header h1 {
+	display: inline;
+	vertical-align: bottom;
+}
+
+.article-header .last-edit {
+	vertical-align: baseline;
+}
